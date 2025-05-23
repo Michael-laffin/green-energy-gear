@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV Power Calculator - Find Your Perfect Power Station</title>
+    <meta name="description" content="Calculate your RV power needs and find the best Jackery power station for your trips.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://www.example.com/best-power-station-rv-trips/rv-power-calculator-tool.html">
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "RV Power Calculator - Find Your Perfect Power Station",
+      "description": "Calculate your RV power needs and find the best Jackery power station for your trips.",
+      "url": "https://www.example.com/best-power-station-rv-trips/rv-power-calculator-tool.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.example.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Best Power Station for RV Trips",
+            "item": "https://www.example.com/best-power-station-rv-trips/article.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "RV Power Calculator",
+            "item": "https://www.example.com/best-power-station-rv-trips/rv-power-calculator-tool.html"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "HowTo",
+        "name": "Calculate Your RV Power Needs",
+        "description": "A step-by-step guide to calculating your RV's power consumption and finding a suitable power station.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "List Your Appliances",
+            "text": "Identify all the electrical appliances you plan to use in your RV."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Estimate Usage Hours",
+            "text": "Estimate how many hours per day each appliance will be used."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Calculate Total Watt-Hours",
+            "text": "The calculator will sum up the watt-hours for all your appliances."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Receive Recommendations",
+            "text": "Based on your total power needs, we'll recommend suitable Jackery power stations."
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">RV Power Calculator</h1>
+            <p class="text-lg text-gray-600">Estimate your power needs and find the ideal Jackery power station for your RV adventures!</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 mt-4">
+                Explore Jackery Power Stations Now!
+            </a>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Your RV Appliances</h2>
+                <div id="appliances-list">
+                    <!-- Appliance input fields will be added here by JavaScript -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 p-4 border border-gray-200 rounded-md bg-gray-50">
+                        <div>
+                            <label for="appliance-name-1" class="block text-sm font-medium text-gray-700">Appliance Name</label>
+                            <input type="text" id="appliance-name-1" value="Lights" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-watts-1" class="block text-sm font-medium text-gray-700">Wattage (W)</label>
+                            <input type="number" id="appliance-watts-1" value="20" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-hours-1" class="block text-sm font-medium text-gray-700">Hours/Day</label>
+                            <input type="number" id="appliance-hours-1" value="6" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 p-4 border border-gray-200 rounded-md bg-gray-50">
+                        <div>
+                            <label for="appliance-name-2" class="block text-sm font-medium text-gray-700">Appliance Name</label>
+                            <input type="text" id="appliance-name-2" value="Fan" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-watts-2" class="block text-sm font-medium text-gray-700">Wattage (W)</label>
+                            <input type="number" id="appliance-watts-2" value="40" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-hours-2" class="block text-sm font-medium text-gray-700">Hours/Day</label>
+                            <input type="number" id="appliance-hours-2" value="8" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 p-4 border border-gray-200 rounded-md bg-gray-50">
+                        <div>
+                            <label for="appliance-name-3" class="block text-sm font-medium text-gray-700">Appliance Name</label>
+                            <input type="text" id="appliance-name-3" value="Small Fridge" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-watts-3" class="block text-sm font-medium text-gray-700">Wattage (W)</label>
+                            <input type="number" id="appliance-watts-3" value="60" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-hours-3" class="block text-sm font-medium text-gray-700">Hours/Day</label>
+                            <input type="number" id="appliance-hours-3" value="24" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 p-4 border border-gray-200 rounded-md bg-gray-50">
+                        <div>
+                            <label for="appliance-name-4" class="block text-sm font-medium text-gray-700">Appliance Name</label>
+                            <input type="text" id="appliance-name-4" value="TV" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-watts-4" class="block text-sm font-medium text-gray-700">Wattage (W)</label>
+                            <input type="number" id="appliance-watts-4" value="80" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="appliance-hours-4" class="block text-sm font-medium text-gray-700">Hours/Day</label>
+                            <input type="number" id="appliance-hours-4" value="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        </div>
+                    </div>
+                </div>
+                <button id="add-appliance" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Add Another Appliance</button>
+            </section>
+
+            <section class="mb-8">
+                <button id="calculate-power" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">
+                    Calculate My RV Power Needs
+                </button>
+            </section>
+
+            <section id="results" class="hidden bg-indigo-50 p-6 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-indigo-800 mb-4">Your Estimated Power Needs</h2>
+                <p class="text-xl text-indigo-700 mb-4">Total Daily Watt-Hours: <span id="total-watt-hours" class="font-bold">0 Wh</span></p>
+                <p class="text-xl text-indigo-700 mb-6">Recommended Jackery Power Stations:</p>
+                <div id="recommendations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Recommendations will be injected here -->
+                </div>
+                <div class="text-center mt-8">
+                    <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+                        Shop All Jackery Power Stations
+                    </a>
+                </div>
+            </section>
+
+            <!-- Email Opt-in Placeholder -->
+            <section class="mt-12 p-6 bg-gray-50 rounded-lg shadow-inner text-center">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">Get More RV Power Tips!</h3>
+                <p class="text-gray-600 mb-4">Sign up for our newsletter to receive exclusive guides, deals, and updates on RV power solutions.</p>
+                <form class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">Subscribe Now</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 RV Power Solutions. All rights reserved. Powered by Jackery Affiliate Program.</p>
+        </footer>
+    </div>
+
+    <script>
+        let applianceCount = 4;
+        const affiliateLink = "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus";
+
+        const jackeryModels = [
+            { name: "Jackery Explorer 500", capacity: 518, continuous_watts: 500, peak_watts: 1000, link: affiliateLink },
+            { name: "Jackery Explorer 1000 Pro", capacity: 1002, continuous_watts: 1000, peak_watts: 2000, link: affiliateLink },
+            { name: "Jackery Explorer 2000 Pro", capacity: 2160, continuous_watts: 2200, peak_watts: 4400, link: affiliateLink },
+            { name: "Jackery Explorer 3000 Pro", capacity: 3024, continuous_watts: 3000, peak_watts: 6000, link: affiliateLink },
+            { name: "Jackery Explorer 2000 Plus", capacity: 2042, continuous_watts: 3000, peak_watts: 6000, link: affiliateLink }
+        ];
+
+        document.getElementById('add-appliance').addEventListener('click', () => {
+            applianceCount++;
+            const appliancesList = document.getElementById('appliances-list');
+            const newApplianceDiv = document.createElement('div');
+            newApplianceDiv.className = 'grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 p-4 border border-gray-200 rounded-md bg-gray-50';
+            newApplianceDiv.innerHTML = `
+                <div>
+                    <label for="appliance-name-${applianceCount}" class="block text-sm font-medium text-gray-700">Appliance Name</label>
+                    <input type="text" id="appliance-name-${applianceCount}" placeholder="e.g., Coffee Maker" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="appliance-watts-${applianceCount}" class="block text-sm font-medium text-gray-700">Wattage (W)</label>
+                    <input type="number" id="appliance-watts-${applianceCount}" placeholder="e.g., 1000" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="appliance-hours-${applianceCount}" class="block text-sm font-medium text-gray-700">Hours/Day</label>
+                    <input type="number" id="appliance-hours-${applianceCount}" placeholder="e.g., 0.5" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+            `;
+            appliancesList.appendChild(newApplianceDiv);
+        });
+
+        document.getElementById('calculate-power').addEventListener('click', () => {
+            let totalWattHours = 0;
+            let maxContinuousWatts = 0;
+
+            for (let i = 1; i <= applianceCount; i++) {
+                const wattsInput = document.getElementById(`appliance-watts-${i}`);
+                const hoursInput = document.getElementById(`appliance-hours-${i}`);
+
+                if (wattsInput && hoursInput) {
+                    const watts = parseFloat(wattsInput.value) || 0;
+                    const hours = parseFloat(hoursInput.value) || 0;
+                    totalWattHours += watts * hours;
+                    if (watts > maxContinuousWatts) {
+                        maxContinuousWatts = watts;
+                    }
+                }
+            }
+
+            document.getElementById('total-watt-hours').textContent = `${totalWattHours.toFixed(2)} Wh`;
+            document.getElementById('results').classList.remove('hidden');
+
+            const recommendationsDiv = document.getElementById('recommendations');
+            recommendationsDiv.innerHTML = ''; // Clear previous recommendations
+
+            const suitableModels = jackeryModels.filter(model =>
+                model.capacity >= totalWattHours * 1.2 && // 20% buffer for capacity
+                model.continuous_watts >= maxContinuousWatts * 1.1 // 10% buffer for continuous wattage
+            ).sort((a, b) => a.capacity - b.capacity); // Sort by capacity
+
+            if (suitableModels.length > 0) {
+                suitableModels.forEach(model => {
+                    const modelDiv = document.createElement('div');
+                    modelDiv.className = 'bg-white p-4 rounded-lg shadow-md border border-indigo-200';
+                    modelDiv.innerHTML = `
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-2">${model.name}</h3>
+                        <p class="text-gray-600">Capacity: <span class="font-medium">${model.capacity}Wh</span></p>
+                        <p class="text-gray-600">Continuous Output: <span class="font-medium">${model.continuous_watts}W</span></p>
+                        <a href="${model.link}" target="_blank" class="block mt-4 bg-green-500 text-white text-center py-2 px-4 rounded-md hover:bg-green-600 transition duration-300">
+                            View on Jackery
+                        </a>
+                    `;
+                    recommendationsDiv.appendChild(modelDiv);
+                });
+            } else {
+                recommendationsDiv.innerHTML = `
+                    <p class="text-gray-700 col-span-full">Based on your high power needs, we recommend exploring the <a href="${affiliateLink}" target="_blank" class="text-blue-600 hover:underline">full range of Jackery power stations</a>, especially their larger models like the Jackery Explorer 3000 Pro or Jackery Explorer 2000 Plus, which offer expandable capacity.</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

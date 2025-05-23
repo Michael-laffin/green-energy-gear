@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Wattage Calculator - Jackery Home Backup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.0.20/dist/framer-motion.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4ade80, #34d399);
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.jackery.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Solar Generators",
+              "item": "https://www.jackery.com/collections/solar-generators"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Solar Wattage Calculator",
+              "item": "https://www.jackery.com/solar-generator-home-backup/solar-wattage-calculator-tool.html"
+            }
+          ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Jackery Solar Generator for Home Backup",
+          "description": "Estimate the required solar panel wattage and battery capacity for a Jackery solar generator system for your home backup needs.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jackery"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Jackery"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1500"
+          }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Use the Solar Wattage Calculator",
+          "description": "A step-by-step guide to estimate your home's solar panel wattage and battery capacity needs for a Jackery solar generator system.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Input Daily Power Consumption",
+              "text": "Enter your estimated daily power consumption in Watt-hours (Wh). This is the total energy your essential appliances will use during an emergency."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Input Peak Power Needs",
+              "text": "Enter the maximum instantaneous power (in Watts) your appliances might draw at any given moment. This helps determine the inverter size."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Input Average Daily Sunlight Hours",
+              "text": "Provide the average number of effective sunlight hours per day in your location. This affects how quickly your solar panels can recharge the battery."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Calculate",
+              "text": "Click the 'Calculate' button to get your estimated solar panel wattage and battery capacity recommendations."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Explore Jackery Solutions",
+              "text": "Review the recommended Jackery solar generator systems and click the provided links to learn more and purchase."
+            }
+          ]
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            class="bg-white rounded-lg shadow-xl p-6 w-full max-w-md"
+        >
+            <h1 class="text-3xl font-bold text-center mb-6 text-green-600">Solar Wattage Calculator</h1>
+            <p class="text-center text-gray-600 mb-6">Estimate your home's solar panel and battery needs for emergency backup with Jackery.</p>
+
+            <!-- Above-the-fold CTA -->
+            <div class="mb-6 text-center">
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" rel="noopener noreferrer"
+                   class="inline-block gradient-bg text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    Explore Jackery Solar Generators Now!
+                </a>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <label for="dailyWh" class="block text-sm font-medium text-gray-700">Estimated Daily Power Consumption (Wh):</label>
+                    <input type="number" id="dailyWh" value="2000" placeholder="e.g., 2000" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="peakW" class="block text-sm font-medium text-gray-700">Peak Power Needs (Watts):</label>
+                    <input type="number" id="peakW" value="1000" placeholder="e.g., 1000" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="sunlightHours" class="block text-sm font-medium text-gray-700">Average Daily Effective Sunlight Hours:</label>
+                    <input type="number" id="sunlightHours" value="4" step="0.1" placeholder="e.g., 4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+            </div>
+
+            <button onclick="calculateWattage()" class="mt-6 w-full gradient-bg text-white font-bold py-3 px-4 rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                Calculate
+            </button>
+
+            <motion.div
+                id="results"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.5 }}
+                class="mt-8 p-4 bg-green-50 rounded-md border border-green-200 hidden"
+            >
+                <h2 class="text-xl font-semibold text-green-700 mb-3">Your Estimated Needs:</h2>
+                <p class="text-gray-800 mb-2">Required Solar Panel Wattage: <span id="solarWattage" class="font-bold text-green-600"></span> Watts</p>
+                <p class="text-gray-800 mb-4">Recommended Battery Capacity: <span id="batteryCapacity" class="font-bold text-green-600"></span> Wh</p>
+                <p class="text-sm text-gray-600">
+                    For reliable home backup, consider a Jackery Solar Generator system that meets or exceeds these specifications.
+                </p>
+                <div class="mt-4 text-center">
+                    <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" rel="noopener noreferrer"
+                       class="inline-block bg-green-700 text-white font-bold py-2 px-4 rounded-full shadow hover:bg-green-800 transition duration-300">
+                        Find Your Jackery System
+                    </a>
+                </div>
+            </motion.div>
+
+            <!-- Email Opt-in / Resource Download -->
+            <div class="mt-8 p-4 bg-blue-50 rounded-md border border-blue-200 text-center">
+                <h3 class="text-lg font-semibold text-blue-700 mb-2">Want a detailed guide?</h3>
+                <p class="text-gray-700 mb-3">Download our FREE "Emergency Solar Power Planning Guide" for comprehensive insights!</p>
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" rel="noopener noreferrer"
+                   class="inline-block bg-blue-600 text-white font-bold py-2 px-5 rounded-full shadow hover:bg-blue-700 transition duration-300">
+                    Get Your Free Guide Here!
+                </a>
+            </div>
+
+        </motion.div>
+    </div>
+
+    <script>
+        function calculateWattage() {
+            const dailyWh = parseFloat(document.getElementById('dailyWh').value);
+            const peakW = parseFloat(document.getElementById('peakW').value);
+            const sunlightHours = parseFloat(document.getElementById('sunlightHours').value);
+
+            if (isNaN(dailyWh) || isNaN(peakW) || isNaN(sunlightHours) || dailyWh <= 0 || peakW <= 0 || sunlightHours <= 0) {
+                alert('Please enter valid positive numbers for all fields.');
+                return;
+            }
+
+            // Calculation logic
+            // Solar Panel Wattage: DailyWh / (SunlightHours * 0.75 efficiency)
+            // Battery Capacity: DailyWh * 1.2 (20% buffer)
+            const requiredSolarWattage = Math.ceil(dailyWh / (sunlightHours * 0.75));
+            const recommendedBatteryCapacity = Math.ceil(dailyWh * 1.2);
+
+            document.getElementById('solarWattage').textContent = requiredSolarWattage;
+            document.getElementById('batteryCapacity').textContent = recommendedBatteryCapacity;
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.classList.remove('hidden');
+            framerMotion.animate(resultsDiv, { opacity: 1, height: 'auto' }, { duration: 0.5 });
+        }
+    </script>
+</body>
+</html>

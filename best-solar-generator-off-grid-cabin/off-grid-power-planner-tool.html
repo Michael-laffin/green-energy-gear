@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Grid Power Planner - Best Solar Generator for Off-Grid Cabin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://www.jackery.com/best-solar-generator-off-grid-cabin/off-grid-power-planner-tool.html">
+    <meta name="description" content="Calculate your off-grid cabin's power needs and find the best Jackery solar generator and solar panel configurations for sustainable living.">
+    <meta name="keywords" content="off-grid power planner, solar generator calculator, cabin power needs, Jackery solar, off-grid living, solar panel configuration, best solar generator for off-grid cabin">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Off-Grid Power Planner - Best Solar Generator for Off-Grid Cabin",
+      "description": "Calculate your off-grid cabin's power needs and find the best Jackery solar generator and solar panel configurations for sustainable living.",
+      "url": "https://www.jackery.com/best-solar-generator-off-grid-cabin/off-grid-power-planner-tool.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.jackery.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Best Solar Generator for Off-Grid Cabin",
+            "item": "https://www.jackery.com/best-solar-generator-off-grid-cabin/article.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Off-Grid Power Planner",
+            "item": "https://www.jackery.com/best-solar-generator-off-grid-cabin/off-grid-power-planner-tool.html"
+          }
+        ]
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.jackery.com/best-solar-generator-off-grid-cabin/off-grid-power-planner-tool.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Plan Your Off-Grid Cabin Power Needs",
+      "description": "Use the Off-Grid Power Planner to calculate your energy consumption and find suitable Jackery solar solutions.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Estimate Appliance Wattage",
+          "text": "Input the wattage and daily usage hours for your cabin appliances like lights, water pump, and small kitchen appliances."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Calculate Total Power Needs",
+          "text": "The tool will automatically calculate your total daily Watt-hour (Wh) consumption."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Receive Jackery Recommendations",
+          "text": "Based on your power needs, the planner will suggest suitable Jackery power stations and solar panel configurations."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Explore Jackery Products",
+          "text": "Click on the recommended products to learn more and purchase directly from Jackery."
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-green-700 mb-2">Off-Grid Power Planner</h1>
+            <p class="text-lg sm:text-xl text-gray-600">Calculate your cabin's energy needs and find the perfect Jackery solution.</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="inline-block bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg mt-4 hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg">
+                Explore Jackery Solar Generators Now!
+            </a>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-xl p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">Your Cabin's Appliance List</h2>
+            <div id="appliances-list" class="space-y-4 mb-6">
+                <!-- Appliance input fields will be added here by JavaScript -->
+            </div>
+            <button id="add-appliance" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+                Add Another Appliance
+            </button>
+
+            <div class="mt-8 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">Your Estimated Power Needs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <p class="font-medium">Total Daily Watt-hours (Wh):</p>
+                        <p id="total-wh" class="text-green-600 text-2xl font-bold">0 Wh</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <p class="font-medium">Peak Wattage (W):</p>
+                        <p id="peak-wattage" class="text-green-600 text-2xl font-bold">0 W</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">Recommended Jackery Solutions</h2>
+                <div id="recommendations" class="space-y-6">
+                    <!-- Recommendations will be displayed here by JavaScript -->
+                    <div class="bg-blue-50 p-4 rounded-lg text-blue-800">
+                        <p class="font-semibold">Enter your appliance details above to get personalized Jackery recommendations for your off-grid cabin!</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out text-xl shadow-lg">
+                        View All Jackery Products
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <section class="bg-white rounded-lg shadow-xl p-6 sm:p-8 mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 mb-4">Ready for Sustainable Off-Grid Living?</h2>
+            <p class="text-lg text-gray-600 mb-6">Get exclusive tips, guides, and offers on solar generators for your cabin.</p>
+            <!-- Email Opt-in Placeholder -->
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Email Address">
+                    <button type="submit" class="bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out font-bold">
+                        Sign Up for Updates
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 Jackery. All rights reserved. <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="text-blue-500 hover:underline">Affiliate Link Disclosure</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const appliancesList = document.getElementById('appliances-list');
+        const addApplianceBtn = document.getElementById('add-appliance');
+        const totalWhDisplay = document.getElementById('total-wh');
+        const peakWattageDisplay = document.getElementById('peak-wattage');
+        const recommendationsDiv = document.getElementById('recommendations');
+
+        let applianceCount = 0;
+
+        const jackeryProducts = [
+            {
+                name: "Jackery Explorer 1000 Pro",
+                capacityWh: 1002,
+                outputW: 1000,
+                solarInputW: 800,
+                panels: "2x SolarSaga 100W",
+                link: "https://www.jackery.com/products/explorer-1000-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            {
+                name: "Jackery Explorer 2000 Pro",
+                capacityWh: 2160,
+                outputW: 2200,
+                solarInputW: 1400,
+                panels: "4x SolarSaga 200W",
+                link: "https://www.jackery.com/products/jackery-explorer-2000-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            {
+                name: "Jackery Explorer 3000 Pro",
+                capacityWh: 3024,
+                outputW: 3000,
+                solarInputW: 1400,
+                panels: "6x SolarSaga 200W",
+                link: "https://www.jackery.com/products/jackery-explorer-3000-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            {
+                name: "Jackery Explorer 1500 Pro",
+                capacityWh: 1512,
+                outputW: 1800,
+                solarInputW: 1200,
+                panels: "3x SolarSaga 200W",
+                link: "https://www.jackery.com/products/jackery-explorer-1500-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            }
+        ];
+
+        function addApplianceInput() {
+            applianceCount++;
+            const div = document.createElement('div');
+            div.className = 'flex flex-col sm:flex-row gap-4 items-center bg-gray-50 p-4 rounded-md shadow-sm';
+            div.innerHTML = `
+                <input type="text" placeholder="Appliance Name (e.g., LED Light)" class="flex-grow p-2 border border-gray-300 rounded-md" data-type="name" value="${applianceCount === 1 ? 'LED Lights' : (applianceCount === 2 ? 'Water Pump' : (applianceCount === 3 ? 'Mini Fridge' : ''))}">
+                <input type="number" placeholder="Wattage (W)" class="w-full sm:w-32 p-2 border border-gray-300 rounded-md" data-type="wattage" min="0" value="${applianceCount === 1 ? '10' : (applianceCount === 2 ? '150' : (applianceCount === 3 ? '50' : ''))}">
+                <input type="number" placeholder="Hours/Day" class="w-full sm:w-32 p-2 border border-gray-300 rounded-md" data-type="hours" min="0" value="${applianceCount === 1 ? '6' : (applianceCount === 2 ? '1' : (applianceCount === 3 ? '12' : ''))}">
+                <button class="remove-appliance bg-red-500 text-white p-2 rounded-md hover:bg-red-600 transition duration-300 ease-in-out">Remove</button>
+            `;
+            appliancesList.appendChild(div);
+            div.querySelector('.remove-appliance').addEventListener('click', () => {
+                div.remove();
+                calculatePowerNeeds();
+            });
+            div.querySelectorAll('input').forEach(input => {
+                input.addEventListener('input', calculatePowerNeeds);
+            });
+        }
+
+        function calculatePowerNeeds() {
+            let totalWh = 0;
+            let peakWattage = 0;
+            const applianceInputs = appliancesList.querySelectorAll('.flex-col');
+
+            applianceInputs.forEach(applianceDiv => {
+                const wattageInput = applianceDiv.querySelector('input[data-type="wattage"]');
+                const hoursInput = applianceDiv.querySelector('input[data-type="hours"]');
+
+                const wattage = parseFloat(wattageInput.value) || 0;
+                const hours = parseFloat(hoursInput.value) || 0;
+
+                totalWh += wattage * hours;
+                if (wattage > peakWattage) {
+                    peakWattage = wattage;
+                }
+            });
+
+            totalWhDisplay.textContent = `${totalWh.toFixed(0)} Wh`;
+            peakWattageDisplay.textContent = `${peakWattage.toFixed(0)} W`;
+
+            displayRecommendations(totalWh, peakWattage);
+        }
+
+        function displayRecommendations(totalWh, peakWattage) {
+            recommendationsDiv.innerHTML = ''; // Clear previous recommendations
+
+            const suitableProducts = jackeryProducts.filter(product => {
+                // Ensure capacity is at least 1.5x daily Wh for buffer
+                // Ensure output can handle peak wattage
+                return product.capacityWh >= totalWh * 1.5 && product.outputW >= peakWattage;
+            }).sort((a, b) => a.capacityWh - b.capacityWh); // Sort by capacity
+
+            if (suitableProducts.length === 0) {
+                recommendationsDiv.innerHTML = `
+                    <div class="bg-red-100 p-4 rounded-lg text-red-800">
+                        <p class="font-semibold">No single Jackery product can meet these demands. You might need multiple units or a larger custom solar setup. Consider reducing your power consumption or contacting Jackery support for a custom solution.</p>
+                        <p class="mt-2">For very high power needs, explore Jackery's larger models or consider linking multiple units.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            suitableProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'bg-green-50 p-4 rounded-lg shadow-md border border-green-200';
+                productDiv.innerHTML = `
+                    <h3 class="text-xl font-bold text-green-700 mb-2">${product.name}</h3>
+                    <p class="text-gray-700"><strong>Capacity:</strong> ${product.capacityWh} Wh</p>
+                    <p class="text-gray-700"><strong>Continuous Output:</strong> ${product.outputW} W</p>
+                    <p class="text-gray-700"><strong>Recommended Solar Panels:</strong> ${product.panels} (for optimal recharging)</p>
+                    <p class="text-gray-700 mt-2">This unit can power your cabin for approximately <strong>${(product.capacityWh / totalWh).toFixed(1)} days</strong> without solar input (assuming your calculated daily usage).</p>
+                    <a href="${product.link}" class="inline-block bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg mt-4 hover:bg-yellow-600 transition duration-300 ease-in-out">
+                        Buy ${product.name} Now!
+                    </a>
+                `;
+                recommendationsDiv.appendChild(productDiv);
+            });
+        }
+
+        // Initial appliance inputs
+        addApplianceInput();
+        addApplianceInput();
+        addApplianceInput();
+        calculatePowerNeeds(); // Calculate on load with default values
+
+        addApplianceBtn.addEventListener('click', addApplianceInput);
+    </script>
+</body>
+</html>

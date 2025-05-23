@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-bike Charging Calculator - Power Your Ride with Jackery</title>
+    <meta name="description" content="Calculate how long it takes to charge your electric bike battery with different Jackery portable power stations. Find the best Jackery model for your e-bike adventures.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://www.jackery.com/power-electric-bike-jackery/e-bike-charging-calculator-tool.html">
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "E-bike Charging Calculator - Power Your Ride with Jackery",
+      "description": "Calculate how long it takes to charge your electric bike battery with different Jackery portable power stations. Find the best Jackery model for your e-bike adventures.",
+      "url": "https://www.jackery.com/power-electric-bike-jackery/e-bike-charging-calculator-tool.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.jackery.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "How to Power an Electric Bike with Jackery",
+            "item": "https://www.jackery.com/power-electric-bike-jackery/article.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "E-bike Charging Calculator",
+            "item": "https://www.jackery.com/power-electric-bike-jackery/e-bike-charging-calculator-tool.html"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "HowTo",
+        "name": "Calculate E-bike Charging Time with Jackery",
+        "description": "Use this calculator to determine how long it takes to charge your electric bike battery using various Jackery portable power stations.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Enter E-bike Battery Capacity",
+            "text": "Input the Watt-hour (Wh) capacity of your electric bike battery."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Enter E-bike Charger Wattage",
+            "text": "Input the wattage (W) of your electric bike's charger."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "View Results and Recommendations",
+            "text": "The calculator will display estimated charging times for different Jackery models and recommend suitable power stations."
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">E-bike Charging Calculator</h1>
+            <p class="text-lg text-gray-600">Find the perfect Jackery for your electric bike adventures!</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="inline-block bg-yellow-500 text-white font-bold py-2 px-6 rounded-full mt-4 hover:bg-yellow-600 transition duration-300" target="_blank" rel="noopener noreferrer">
+                Shop Jackery Power Stations Now!
+            </a>
+        </header>
+
+        <!-- Calculator Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6">Calculate Your E-bike Charging Time</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="batteryCapacity" class="block text-gray-700 text-sm font-bold mb-2">E-bike Battery Capacity (Wh):</label>
+                    <input type="number" id="batteryCapacity" placeholder="e.g., 500" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="1" required>
+                </div>
+                <div>
+                    <label for="chargerWattage" class="block text-gray-700 text-sm font-bold mb-2">E-bike Charger Wattage (W):</label>
+                    <input type="number" id="chargerWattage" placeholder="e.g., 150" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="1" required>
+                </div>
+            </div>
+            <button id="calculateBtn" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                Calculate Charging Time
+            </button>
+
+            <div id="results" class="mt-8 hidden">
+                <h3 class="text-xl font-semibold text-gray-700 mb-4">Estimated Charging Times & Recommendations:</h3>
+                <div id="jackeryModels" class="space-y-4">
+                    <!-- Results will be injected here by JavaScript -->
+                </div>
+                <p class="text-sm text-gray-500 mt-4">
+                    *Estimates are approximate and assume a 15% efficiency loss during charging. Actual times may vary.
+                </p>
+            </div>
+        </section>
+
+        <!-- Email Opt-in Placeholder -->
+        <section class="bg-blue-700 text-white rounded-lg shadow-md p-6 sm:p-8 text-center mb-8">
+            <h2 class="text-2xl font-bold mb-4">Get More E-bike Power Tips!</h2>
+            <p class="mb-6">Sign up for our newsletter to receive exclusive guides, deals, and new product announcements.</p>
+            <form class="max-w-md mx-auto">
+                <input type="email" placeholder="Your Email Address" class="w-full p-3 rounded-md text-gray-800 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button type="submit" class="bg-white text-blue-700 font-bold py-3 px-6 rounded-md hover:bg-gray-200 transition duration-300 w-full">
+                    Subscribe Now
+                </button>
+            </form>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Ready to Power Your E-bike Anywhere?</h2>
+            <p class="text-lg text-gray-600 mb-6">Explore Jackery's range of portable power stations designed for outdoor enthusiasts.</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition duration-300 text-xl" target="_blank" rel="noopener noreferrer">
+                Discover Jackery for E-bikes!
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 Jackery. All rights reserved. | <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Affiliate Link Disclosure</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const jackeryModels = [
+            { name: "Jackery Explorer 300", capacityWh: 293, outputW: 300, link: "https://www.jackery.com/products/explorer-300-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" },
+            { name: "Jackery Explorer 500", capacityWh: 518, outputW: 500, link: "https://www.jackery.com/products/explorer-500-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" },
+            { name: "Jackery Explorer 1000", capacityWh: 1002, outputW: 1000, link: "https://www.jackery.com/products/explorer-1000-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" },
+            { name: "Jackery Explorer 1500", capacityWh: 1534, outputW: 1800, link: "https://www.jackery.com/products/explorer-1500-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" },
+            { name: "Jackery Explorer 2000 Pro", capacityWh: 2160, outputW: 2200, link: "https://www.jackery.com/products/explorer-2000-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" }
+        ];
+
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            const batteryCapacity = parseFloat(document.getElementById('batteryCapacity').value);
+            const chargerWattage = parseFloat(document.getElementById('chargerWattage').value);
+            const resultsDiv = document.getElementById('results');
+            const jackeryModelsDiv = document.getElementById('jackeryModels');
+
+            jackeryModelsDiv.innerHTML = ''; // Clear previous results
+
+            if (isNaN(batteryCapacity) || isNaN(chargerWattage) || batteryCapacity <= 0 || chargerWattage <= 0) {
+                jackeryModelsDiv.innerHTML = '<p class="text-red-500">Please enter valid positive numbers for battery capacity and charger wattage.</p>';
+                resultsDiv.classList.remove('hidden');
+                return;
+            }
+
+            let suitableModelsFound = false;
+
+            jackeryModels.forEach(model => {
+                // Check if Jackery can power the charger and has enough capacity
+                if (model.outputW >= chargerWattage && model.capacityWh >= batteryCapacity) {
+                    const chargeTimeHours = (batteryCapacity / chargerWattage) * 1.15; // 15% efficiency loss
+                    const chargeTimeMinutes = chargeTimeHours * 60;
+
+                    let displayTime;
+                    if (chargeTimeHours < 1) {
+                        displayTime = `${Math.round(chargeTimeMinutes)} minutes`;
+                    } else {
+                        const hours = Math.floor(chargeTimeHours);
+                        const minutes = Math.round((chargeTimeHours - hours) * 60);
+                        displayTime = `${hours} hour(s) ${minutes} minute(s)`;
+                    }
+
+                    jackeryModelsDiv.innerHTML += `
+                        <div class="border border-gray-200 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">${model.name}</h4>
+                                <p class="text-gray-600">Capacity: ${model.capacityWh}Wh, Output: ${model.outputW}W</p>
+                                <p class="text-green-600 font-bold">Estimated Charging Time: ${displayTime}</p>
+                            </div>
+                            <a href="${model.link}" class="mt-4 sm:mt-0 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-sm transition duration-300" target="_blank" rel="noopener noreferrer">
+                                View ${model.name}
+                            </a>
+                        </div>
+                    `;
+                    suitableModelsFound = true;
+                }
+            });
+
+            if (!suitableModelsFound) {
+                jackeryModelsDiv.innerHTML = `
+                    <p class="text-gray-700">No Jackery models found that meet your e-bike's power requirements. Consider a Jackery with higher capacity and output, or check your e-bike's specifications.</p>
+                    <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" class="inline-block bg-yellow-500 text-white font-bold py-2 px-6 rounded-full mt-4 hover:bg-yellow-600 transition duration-300" target="_blank" rel="noopener noreferrer">
+                        Explore All Jackery Models
+                    </a>
+                `;
+            }
+
+            resultsDiv.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

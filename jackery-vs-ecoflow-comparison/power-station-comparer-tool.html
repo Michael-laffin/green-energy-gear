@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Station Comparer - Jackery vs EcoFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Compare Jackery and EcoFlow portable power stations side-by-side, including capacity, output, weight, price, and noise level, to find the best fit for your needs.">
+    <meta name="keywords" content="Jackery vs EcoFlow, power station comparison, portable power station, solar generator, Jackery, EcoFlow, noise level, capacity, output, price">
+    <link rel="canonical" href="https://example.com/jackery-vs-ecoflow-comparison/power-station-comparer-tool.html">
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Jackery vs EcoFlow Power Station Comparison Tool",
+      "description": "An interactive tool to compare key specifications of Jackery and EcoFlow portable power stations.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Jackery & EcoFlow"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus",
+        "priceCurrency": "USD",
+        "price": "0.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://example.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jackery vs EcoFlow Comparison",
+          "item": "https://example.com/jackery-vs-ecoflow-comparison/article.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Power Station Comparer Tool",
+          "item": "https://example.com/jackery-vs-ecoflow-comparison/power-station-comparer-tool.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-blue-700">Power Station Comparer</h1>
+        <p class="text-center text-lg mb-8">Compare key specifications of Jackery and EcoFlow portable power stations to find your perfect match.</p>
+
+        <!-- Above-the-fold CTA -->
+        <div class="text-center mb-8">
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out">
+                Shop Jackery Power Stations Now!
+            </a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-4 sm:p-6 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div>
+                    <label for="jackery-model" class="block text-gray-700 text-sm font-bold mb-2">Select Jackery Model:</label>
+                    <select id="jackery-model" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <option value="">-- Select --</option>
+                        <option value="Jackery Explorer 300">Jackery Explorer 300</option>
+                        <option value="Jackery Explorer 1000">Jackery Explorer 1000</option>
+                        <option value="Jackery Explorer 2000 Pro">Jackery Explorer 2000 Pro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ecoflow-model" class="block text-gray-700 text-sm font-bold mb-2">Select EcoFlow Model:</label>
+                    <select id="ecoflow-model" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <option value="">-- Select --</option>
+                        <option value="EcoFlow RIVER 2">EcoFlow RIVER 2</option>
+                        <option value="EcoFlow DELTA 2">EcoFlow DELTA 2</option>
+                        <option value="EcoFlow DELTA Pro">EcoFlow DELTA Pro</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="comparison-results" class="overflow-x-auto">
+                <!-- Comparison table will be injected here -->
+            </div>
+        </div>
+
+        <!-- Email Opt-in Placeholder -->
+        <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 mb-8 rounded-lg" role="alert">
+            <p class="font-bold">Get Exclusive Deals & Guides!</p>
+            <p>Sign up for our newsletter to receive the latest power station reviews, deals, and how-to guides directly in your inbox.</p>
+            <div class="mt-4">
+                <input type="email" placeholder="Your Email Address" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline md:w-2/3 lg:w-1/2">
+                <button class="mt-2 md:mt-0 md:ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-sm text-gray-600">
+                Disclaimer: This tool provides general comparison information. Prices and specifications are subject to change.
+                We may earn a commission from purchases made through our affiliate links.
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline">Support us by shopping Jackery!</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const models = {
+            "Jackery Explorer 300": {
+                capacity: "293Wh",
+                output: "300W (500W Peak)",
+                weight: "6.39 lbs",
+                price: "$299",
+                noise: "Silent (Fanless)",
+                link: "https://www.jackery.com/products/explorer-300-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            "Jackery Explorer 1000": {
+                capacity: "1002Wh",
+                output: "1000W (2000W Peak)",
+                weight: "22.04 lbs",
+                price: "$999",
+                noise: "30-40 dB",
+                link: "https://www.jackery.com/products/explorer-1000-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            "Jackery Explorer 2000 Pro": {
+                capacity: "2160Wh",
+                output: "2200W (4400W Peak)",
+                weight: "43 lbs",
+                price: "$2099",
+                noise: "45-55 dB",
+                link: "https://www.jackery.com/products/explorer-2000-pro-portable-power-station?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+            },
+            "EcoFlow RIVER 2": {
+                capacity: "256Wh",
+                output: "300W (600W X-Boost)",
+                weight: "7.7 lbs",
+                price: "$239",
+                noise: "30-40 dB",
+                link: "https://www.ecoflow.com/us/river-2-portable-power-station"
+            },
+            "EcoFlow DELTA 2": {
+                capacity: "1024Wh",
+                output: "1800W (2700W X-Boost)",
+                weight: "27 lbs",
+                price: "$999",
+                noise: "40-50 dB",
+                link: "https://www.ecoflow.com/us/delta-2-portable-power-station"
+            },
+            "EcoFlow DELTA Pro": {
+                capacity: "3600Wh",
+                output: "3600W (7200W X-Boost)",
+                weight: "99 lbs",
+                price: "$3699",
+                noise: "50-60 dB",
+                link: "https://www.ecoflow.com/us/delta-pro-portable-power-station"
+            }
+        };
+
+        const jackerySelect = document.getElementById('jackery-model');
+        const ecoflowSelect = document.getElementById('ecoflow-model');
+        const comparisonResults = document.getElementById('comparison-results');
+
+        function updateComparison() {
+            const jackeryModelName = jackerySelect.value;
+            const ecoflowModelName = ecoflowSelect.value;
+
+            const jackery = models[jackeryModelName];
+            const ecoflow = models[ecoflowModelName];
+
+            let html = '';
+
+            if (jackery || ecoflow) {
+                html = `
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Feature</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">${jackeryModelName || 'Jackery Model'}</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">${ecoflowModelName || 'EcoFlow Model'}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Capacity</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${jackery ? jackery.capacity : 'N/A'}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${ecoflow ? ecoflow.capacity : 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Output (Rated/Peak)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${jackery ? jackery.output : 'N/A'}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${ecoflow ? ecoflow.output : 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Weight</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${jackery ? jackery.weight : 'N/A'}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${ecoflow ? ecoflow.weight : 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Price</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${jackery ? jackery.price : 'N/A'}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${ecoflow ? ecoflow.price : 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Noise Level</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${jackery ? jackery.noise : 'N/A'}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${ecoflow ? ecoflow.noise : 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Buy Now</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    ${jackery ? `<a href="${jackery.link}" target="_blank" class="text-blue-600 hover:underline font-bold">Buy Jackery</a>` : 'N/A'}
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    ${ecoflow ? `<a href="${ecoflow.link}" target="_blank" class="text-blue-600 hover:underline font-bold">Buy EcoFlow</a>` : 'N/A'}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
+            } else {
+                html = '<p class="text-center text-gray-600">Please select at least one model to compare.</p>';
+            }
+            comparisonResults.innerHTML = html;
+        }
+
+        jackerySelect.addEventListener('change', updateComparison);
+        ecoflowSelect.addEventListener('change', updateComparison);
+
+        // Initial call to populate if default options are selected
+        updateComparison();
+    </script>
+</body>
+</html>

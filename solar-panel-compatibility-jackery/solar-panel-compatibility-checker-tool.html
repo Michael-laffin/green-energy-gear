@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Compatibility Checker - Jackery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Check the compatibility of your solar panels with Jackery portable power stations and find optimal charging configurations.">
+    <meta name="keywords" content="solar panel compatibility, Jackery, solar charger, portable power station, solar input, wattage, voltage, connector type">
+    <link rel="canonical" href="https://www.example.com/solar-panel-compatibility-jackery/solar-panel-compatibility-checker-tool.html">
+
+    <!-- Schema.org Product, HowTo, Breadcrumb, Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Solar Panel Compatibility Checker",
+      "description": "A tool to determine the compatibility of solar panels with Jackery portable power stations.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Jackery"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus",
+        "priceCurrency": "USD",
+        "price": "0.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use the Solar Panel Compatibility Checker",
+      "description": "A step-by-step guide to using the Solar Panel Compatibility Checker tool.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Enter your solar panel's voltage (V)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Enter your solar panel's wattage (W)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Select your solar panel's connector type."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Select your Jackery model."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Click 'Check Compatibility' to see the results."
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.example.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solar Panel Compatibility with Jackery",
+          "item": "https://www.example.com/solar-panel-compatibility-jackery/article.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Solar Panel Compatibility Checker",
+          "item": "https://www.example.com/solar-panel-compatibility-jackery/solar-panel-compatibility-checker-tool.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Solar Panel Compatibility Checker - Jackery",
+      "description": "Check the compatibility of your solar panels with Jackery portable power stations and find optimal charging configurations.",
+      "url": "https://www.example.com/solar-panel-compatibility-jackery/solar-panel-compatibility-checker-tool.html"
+    }
+    </script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-900 antialiased">
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <header class="w-full max-w-4xl text-center py-6">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Solar Panel Compatibility Checker</h1>
+            <p class="text-lg text-gray-600">Determine the best solar panel setup for your Jackery portable power station.</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300 mt-4">
+                Shop Jackery Solar Generators Now!
+            </a>
+        </header>
+
+        <main class="w-full max-w-md bg-white rounded-lg shadow-xl p-6 md:p-8">
+            <div class="mb-6">
+                <label for="panelVoltage" class="block text-gray-700 text-sm font-bold mb-2">Solar Panel Voltage (V):</label>
+                <input type="number" id="panelVoltage" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., 18V">
+            </div>
+            <div class="mb-6">
+                <label for="panelWattage" class="block text-gray-700 text-sm font-bold mb-2">Solar Panel Wattage (W):</label>
+                <input type="number" id="panelWattage" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., 100W">
+            </div>
+            <div class="mb-6">
+                <label for="connectorType" class="block text-gray-700 text-sm font-bold mb-2">Connector Type:</label>
+                <select id="connectorType" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="">Select Connector</option>
+                    <option value="DC7909">DC7909 (Jackery Standard)</option>
+                    <option value="MC4">MC4</option>
+                    <option value="Anderson">Anderson</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="jackeryModel" class="block text-gray-700 text-sm font-bold mb-2">Jackery Model:</label>
+                <select id="jackeryModel" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="">Select Jackery Model</option>
+                    <option value="Explorer 2000 Pro">Explorer 2000 Pro</option>
+                    <option value="Explorer 1500 Pro">Explorer 1500 Pro</option>
+                    <option value="Explorer 1000 Pro">Explorer 1000 Pro</option>
+                    <option value="Explorer 500">Explorer 500</option>
+                    <option value="Explorer 300">Explorer 300</option>
+                    <option value="Other">Other Jackery Model</option>
+                </select>
+            </div>
+            <button id="checkCompatibility" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300">
+                Check Compatibility
+            </button>
+
+            <div id="results" class="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200 hidden">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Compatibility Results:</h3>
+                <p id="compatibilityStatus" class="text-lg font-medium mb-2"></p>
+                <p id="optimalConfig" class="text-md text-gray-700 mb-4"></p>
+                <p class="text-sm text-gray-600">For optimal performance, always refer to your Jackery user manual.</p>
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition duration-300 mt-4">
+                    Explore Jackery Solar Panels
+                </a>
+            </div>
+
+            <!-- Email Opt-in Placeholder -->
+            <div class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200 text-center">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Get Our Solar Charging Guide!</h3>
+                <p class="text-blue-700 mb-4">Sign up for exclusive tips on maximizing your solar charging efficiency.</p>
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Your Email" class="flex-grow p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="w-full max-w-4xl text-center py-6 mt-8 text-gray-600 text-sm">
+            <p>&copy; 2025 Jackery Compatibility Guide. All rights reserved. <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline">Visit Jackery Official Site</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('checkCompatibility').addEventListener('click', function() {
+            const panelVoltage = parseFloat(document.getElementById('panelVoltage').value);
+            const panelWattage = parseFloat(document.getElementById('panelWattage').value);
+            const connectorType = document.getElementById('connectorType').value;
+            const jackeryModel = document.getElementById('jackeryModel').value;
+            const resultsDiv = document.getElementById('results');
+            const compatibilityStatus = document.getElementById('compatibilityStatus');
+            const optimalConfig = document.getElementById('optimalConfig');
+
+            resultsDiv.classList.remove('hidden');
+
+            if (isNaN(panelVoltage) || isNaN(panelWattage) || !connectorType || !jackeryModel) {
+                compatibilityStatus.textContent = "Please fill in all fields to check compatibility.";
+                compatibilityStatus.className = "text-lg font-medium mb-2 text-red-600";
+                optimalConfig.textContent = "";
+                return;
+            }
+
+            let status = "Compatible!";
+            let config = "Optimal charging configuration depends on your specific Jackery model and solar panel specifications.";
+            let statusColor = "text-green-600";
+
+            // Jackery Model Specifications (simplified for demonstration)
+            const jackerySpecs = {
+                "Explorer 2000 Pro": { minV: 12, maxV: 48, maxW: 1200, connectors: ["DC7909", "MC4"] },
+                "Explorer 1500 Pro": { minV: 12, maxV: 48, maxW: 800, connectors: ["DC7909", "MC4"] },
+                "Explorer 1000 Pro": { minV: 12, maxV: 30, maxW: 200, connectors: ["DC7909", "MC4"] },
+                "Explorer 500": { minV: 12, maxV: 30, maxW: 100, connectors: ["DC7909"] },
+                "Explorer 300": { minV: 12, maxV: 30, maxW: 60, connectors: ["DC7909"] }
+            };
+
+            const selectedJackery = jackerySpecs[jackeryModel];
+
+            if (jackeryModel === "Other") {
+                status = "Please refer to your specific Jackery model's manual for compatibility.";
+                statusColor = "text-blue-600";
+                config = "General guidelines: Ensure your solar panel's voltage and wattage are within your Jackery's input limits, and use a compatible connector.";
+            } else if (!selectedJackery) {
+                status = "Jackery model not recognized. Please select a valid model.";
+                statusColor = "text-red-600";
+                config = "";
+            } else {
+                if (panelVoltage < selectedJackery.minV || panelVoltage > selectedJackery.maxV) {
+                    status = "Voltage Mismatch!";
+                    statusColor = "text-red-600";
+                    config = `Your panel's voltage (${panelVoltage}V) is outside the recommended range for ${jackeryModel} (${selectedJackery.minV}V - ${selectedJackery.maxV}V).`;
+                } else if (panelWattage > selectedJackery.maxW) {
+                    status = "Wattage Exceeded!";
+                    statusColor = "text-orange-600";
+                    config = `Your panel's wattage (${panelWattage}W) exceeds the maximum input for ${jackeryModel} (${selectedJackery.maxW}W). It will still charge, but at a reduced rate.`;
+                } else if (!selectedJackery.connectors.includes(connectorType) && connectorType !== "Other") {
+                    status = "Connector Mismatch!";
+                    statusColor = "text-red-600";
+                    config = `The ${connectorType} connector is not directly compatible with ${jackeryModel}. You may need an adapter.`;
+                } else {
+                    status = "Compatible!";
+                    statusColor = "text-green-600";
+                    const estimatedChargeTime = (selectedJackery.maxW / panelWattage) * 5; // Placeholder calculation
+                    config = `Your ${panelWattage}W panel should work well with the ${jackeryModel}. Estimated charging time (rough estimate): ${estimatedChargeTime.toFixed(1)} hours under ideal conditions.`;
+                }
+            }
+
+            compatibilityStatus.textContent = status;
+            compatibilityStatus.className = `text-lg font-medium mb-2 ${statusColor}`;
+            optimalConfig.textContent = config;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Power Estimator - Jackery Refrigerator Compatibility</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://www.example.com/can-jackery-run-refrigerator/appliance-power-estimator-tool.html">
+    <meta name="description" content="Estimate how long a Jackery portable power station can run your refrigerator during outages or off-grid adventures. Compare models and find the best fit for your emergency power needs.">
+    <meta name="keywords" content="Jackery, portable power station, refrigerator, mini-fridge, full-size fridge, energy-efficient fridge, power estimator, emergency power, food preservation, wattage, surge, runtime calculator">
+    <meta property="og:title" content="Appliance Power Estimator - Jackery Refrigerator Compatibility">
+    <meta property="og:description" content="Estimate how long a Jackery portable power station can run your refrigerator during outages or off-grid adventures. Compare models and find the best fit for your emergency power needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/can-jackery-run-refrigerator/appliance-power-estimator-tool.html">
+    <meta property="og:image" content="https://www.example.com/images/jackery-refrigerator-tool-og.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Appliance Power Estimator - Jackery Refrigerator Compatibility",
+      "description": "Estimate how long a Jackery portable power station can run your refrigerator during outages or off-grid adventures. Compare models and find the best fit for your emergency power needs.",
+      "url": "https://www.example.com/can-jackery-run-refrigerator/appliance-power-estimator-tool.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.example.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Can a Jackery Run a Refrigerator?",
+            "item": "https://www.example.com/can-jackery-run-refrigerator/article.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Appliance Power Estimator",
+            "item": "https://www.example.com/can-jackery-run-refrigerator/appliance-power-estimator-tool.html"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "HowTo",
+        "name": "Estimate Refrigerator Runtime with Jackery",
+        "description": "A tool to help you estimate how long various Jackery models can power your refrigerator.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Select Refrigerator Type",
+            "text": "Choose the type of refrigerator you have (mini-fridge, full-size, energy-efficient)."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Enter Refrigerator Wattage",
+            "text": "Input the running wattage of your refrigerator. Check its label or manual."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Jackery Model",
+            "text": "Choose the Jackery portable power station model you plan to use."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Calculate Runtime",
+            "text": "Click the 'Calculate Runtime' button to see the estimated hours your Jackery can power your fridge."
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Appliance Power Estimator</h1>
+            <p class="text-lg text-gray-700">Find out how long your Jackery can power your refrigerator.</p>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-lg p-6 sm:p-8 max-w-2xl mx-auto">
+            <div class="mb-6">
+                <label for="fridgeType" class="block text-gray-700 text-sm font-bold mb-2">Refrigerator Type:</label>
+                <select id="fridgeType" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" onchange="updateWattagePlaceholder()">
+                    <option value="">Select Type</option>
+                    <option value="mini">Mini-Fridge (50-100W)</option>
+                    <option value="full-size">Full-Size Refrigerator (100-200W)</option>
+                    <option value="energy-efficient">Energy-Efficient Refrigerator (70-150W)</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label for="wattage" class="block text-gray-700 text-sm font-bold mb-2">Refrigerator Running Wattage (W):</label>
+                <input type="number" id="wattage" placeholder="e.g., 120" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-6">
+                <label for="jackeryModel" class="block text-gray-700 text-sm font-bold mb-2">Jackery Model:</label>
+                <select id="jackeryModel" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="">Select Jackery Model</option>
+                    <option value="240">Jackery Explorer 240 (240Wh)</option>
+                    <option value="500">Jackery Explorer 500 (518Wh)</option>
+                    <option value="1000">Jackery Explorer 1000 (1002Wh)</option>
+                    <option value="1500">Jackery Explorer 1500 (1534Wh)</option>
+                    <option value="2000">Jackery Explorer 2000 Pro (2160Wh)</option>
+                </select>
+            </div>
+
+            <button onclick="calculateRuntime()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4">
+                Calculate Runtime
+            </button>
+
+            <div id="result" class="mt-6 p-4 bg-blue-50 border border-blue-200 rounded text-blue-800 hidden">
+                <p class="font-semibold text-lg mb-2">Estimated Runtime:</p>
+                <p id="runtimeOutput" class="text-2xl font-bold"></p>
+                <p class="text-sm mt-2">Note: These are estimates. Actual runtime may vary based on refrigerator efficiency, ambient temperature, and usage patterns. Jackery power stations typically have an 85% efficiency rate.</p>
+                <p class="mt-4 text-center">
+                    Ready to power your home? <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline font-bold">Shop Jackery Power Stations Now!</a>
+                </p>
+            </div>
+
+            <div class="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 text-center">
+                <h3 class="font-semibold text-lg mb-2">Don't Miss Out!</h3>
+                <p class="mb-4">Get exclusive tips on emergency power solutions and special offers directly to your inbox.</p>
+                <button class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Sign Up for Updates (Placeholder)
+                </button>
+            </div>
+        </main>
+
+        <footer class="text-center mt-8 text-gray-600 text-sm">
+            <p>&copy; 2025 Jackery Power Solutions. All rights reserved. <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline">Visit Jackery.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const jackeryCapacities = {
+            "240": 240,
+            "500": 518,
+            "1000": 1002,
+            "1500": 1534,
+            "2000": 2160
+        };
+
+        function updateWattagePlaceholder() {
+            const fridgeType = document.getElementById('fridgeType').value;
+            const wattageInput = document.getElementById('wattage');
+            switch (fridgeType) {
+                case 'mini':
+                    wattageInput.placeholder = "e.g., 75 (50-100W)";
+                    break;
+                case 'full-size':
+                    wattageInput.placeholder = "e.g., 150 (100-200W)";
+                    break;
+                case 'energy-efficient':
+                    wattageInput.placeholder = "e.g., 100 (70-150W)";
+                    break;
+                default:
+                    wattageInput.placeholder = "e.g., 120";
+            }
+        }
+
+        function calculateRuntime() {
+            const wattage = parseFloat(document.getElementById('wattage').value);
+            const jackeryModel = document.getElementById('jackeryModel').value;
+            const resultDiv = document.getElementById('result');
+            const runtimeOutput = document.getElementById('runtimeOutput');
+            const efficiency = 0.85; // Jackery efficiency
+
+            if (isNaN(wattage) || wattage <= 0 || !jackeryModel) {
+                runtimeOutput.textContent = "Please enter valid wattage and select a Jackery model.";
+                resultDiv.classList.remove('hidden');
+                resultDiv.classList.remove('bg-blue-50', 'border-blue-200', 'text-blue-800');
+                resultDiv.classList.add('bg-red-50', 'border-red-200', 'text-red-800');
+                return;
+            }
+
+            const capacityWh = jackeryCapacities[jackeryModel];
+            if (!capacityWh) {
+                runtimeOutput.textContent = "Please select a valid Jackery model.";
+                resultDiv.classList.remove('hidden');
+                resultDiv.classList.remove('bg-blue-50', 'border-blue-200', 'text-blue-800');
+                resultDiv.classList.add('bg-red-50', 'border-red-200', 'text-red-800');
+                return;
+            }
+
+            // Refrigerators cycle on and off. A common duty cycle is 1/3 to 1/2.
+            // For estimation, we'll use an average running wattage that accounts for cycling.
+            // Let's assume a 33% duty cycle for continuous running wattage.
+            const effectiveWattage = wattage * 0.33; // Fridge runs about 1/3 of the time
+
+            const runtimeHours = (capacityWh * efficiency) / effectiveWattage;
+
+            runtimeOutput.textContent = `${runtimeHours.toFixed(1)} hours`;
+            resultDiv.classList.remove('hidden');
+            resultDiv.classList.remove('bg-red-50', 'border-red-200', 'text-red-800');
+            resultDiv.classList.add('bg-blue-50', 'border-blue-200', 'text-blue-800');
+        }
+    </script>
+</body>
+</html>

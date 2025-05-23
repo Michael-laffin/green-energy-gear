@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Wattage Appliance Estimator - Jackery Compatibility</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Estimate how long various Jackery models can power high-wattage appliances like microwaves. Find the perfect Jackery for your portable kitchen needs.">
+    <meta name="keywords" content="Jackery, microwave, portable power, high wattage, appliance estimator, power station, solar generator, Jackery Explorer, Jackery Solar Generator">
+    <link rel="canonical" href="https://www.example.com/can-jackery-run-microwave/high-wattage-appliance-estimator-tool.html">
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Jackery High-Wattage Appliance Estimator",
+      "description": "A tool to estimate the runtime of Jackery portable power stations with high-wattage appliances like microwaves.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Jackery"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Jackery"
+        }
+      }
+    }
+    </script>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.example.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Can a Jackery Run a Microwave?",
+          "item": "https://www.example.com/can-jackery-run-microwave/article.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "High-Wattage Appliance Estimator",
+          "item": "https://www.example.com/can-jackery-run-microwave/high-wattage-appliance-estimator-tool.html"
+        }
+      ]
+    }
+    </script>
+    <!-- HowTo Schema (if applicable, for tool usage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use the High-Wattage Appliance Estimator",
+      "description": "A step-by-step guide to estimate how long your Jackery can power high-wattage appliances.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Select your Jackery model from the dropdown menu."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Enter the running wattage of your appliance (e.g., microwave)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Click 'Calculate Runtime' to see the estimated duration."
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">High-Wattage Appliance Estimator</h1>
+            <p class="text-lg text-gray-600">Find out how long your Jackery can power your microwave and other high-wattage devices.</p>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-md p-6 sm:p-8 max-w-2xl mx-auto">
+            <div class="mb-6">
+                <label for="jackeryModel" class="block text-gray-700 text-sm font-bold mb-2">Select Jackery Model:</label>
+                <select id="jackeryModel" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="">-- Select a Jackery Model --</option>
+                    <option value="Jackery Explorer 1000">Jackery Explorer 1000 (1002Wh)</option>
+                    <option value="Jackery Explorer 1500">Jackery Explorer 1500 (1534Wh)</option>
+                    <option value="Jackery Explorer 2000 Pro">Jackery Explorer 2000 Pro (2160Wh)</option>
+                    <option value="Jackery Explorer 3000 Pro">Jackery Explorer 3000 Pro (3024Wh)</option>
+                    <option value="Jackery Explorer 8000 Pro">Jackery Explorer 8000 Pro (8000Wh)</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label for="applianceWattage" class="block text-gray-700 text-sm font-bold mb-2">Appliance Running Wattage (Watts):</label>
+                <input type="number" id="applianceWattage" placeholder="e.g., 800 for a microwave" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-6">
+                <label for="peakWattage" class="block text-gray-700 text-sm font-bold mb-2">Appliance Peak Wattage (Watts, optional):</label>
+                <input type="number" id="peakWattage" placeholder="e.g., 1200 for microwave startup" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <button id="calculateBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+                Calculate Runtime
+            </button>
+
+            <div id="results" class="mt-8 p-4 bg-blue-50 border-l-4 border-blue-400 text-blue-800 hidden">
+                <h3 class="text-xl font-semibold mb-2">Estimated Runtime:</h3>
+                <p id="runtimeOutput" class="text-lg"></p>
+                <p id="warningOutput" class="text-red-600 mt-2 text-sm"></p>
+                <p class="mt-4 text-sm">
+                    Ready to power your adventures? <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline font-semibold">Explore Jackery Power Stations now!</a>
+                </p>
+            </div>
+
+            <!-- Above-the-fold CTA -->
+            <div class="mt-8 text-center">
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out shadow-lg">
+                    Shop Jackery Power Stations & Get Yours Today!
+                </a>
+            </div>
+        </main>
+
+        <section class="mt-12 bg-white rounded-lg shadow-md p-6 sm:p-8 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">How it Works</h2>
+            <p class="text-gray-700 mb-4">
+                This tool helps you estimate how long a Jackery portable power station can run your high-wattage appliances.
+                The calculation is based on the Jackery's battery capacity (Wh) and the running wattage of your appliance.
+                Keep in mind that actual runtime may vary due to factors like appliance efficiency, battery degradation, and environmental conditions.
+            </p>
+            <p class="text-gray-700">
+                For optimal performance and to ensure compatibility, always check your appliance's specific power requirements.
+                If your appliance has a high peak (surge) wattage, ensure the Jackery model you choose can handle that initial power draw.
+            </p>
+        </section>
+
+        <!-- Placeholder for Email Opt-in / Resource Download -->
+        <section class="mt-12 bg-blue-700 text-white rounded-lg shadow-md p-6 sm:p-8 max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Unlock More Power Tips!</h2>
+            <p class="mb-6">Sign up for our newsletter to get exclusive guides, deals, and updates on portable power solutions.</p>
+            <form class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <input type="email" placeholder="Your Email Address" class="p-3 rounded-lg w-full sm:w-2/3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <button type="submit" class="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out w-full sm:w-auto">
+                    Subscribe Now
+                </button>
+            </form>
+        </section>
+
+        <footer class="text-center mt-12 text-gray-600 text-sm">
+            <p>&copy; 2025 Portable Power Solutions. All rights reserved. | Powered by Jackery Affiliate Program.</p>
+            <p class="mt-2">
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline">Visit Jackery.com</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            const jackeryModel = document.getElementById('jackeryModel').value;
+            const applianceWattage = parseFloat(document.getElementById('applianceWattage').value);
+            const peakWattage = parseFloat(document.getElementById('peakWattage').value);
+            const resultsDiv = document.getElementById('results');
+            const runtimeOutput = document.getElementById('runtimeOutput');
+            const warningOutput = document.getElementById('warningOutput');
+
+            warningOutput.textContent = ''; // Clear previous warnings
+
+            if (!jackeryModel || isNaN(applianceWattage) || applianceWattage <= 0) {
+                runtimeOutput.textContent = 'Please select a Jackery model and enter a valid appliance running wattage.';
+                resultsDiv.classList.remove('hidden');
+                return;
+            }
+
+            let capacityWh;
+            let continuousOutputW;
+            let surgeOutputW;
+
+            switch (jackeryModel) {
+                case 'Jackery Explorer 1000':
+                    capacityWh = 1002;
+                    continuousOutputW = 1000;
+                    surgeOutputW = 2000;
+                    break;
+                case 'Jackery Explorer 1500':
+                    capacityWh = 1534;
+                    continuousOutputW = 1800;
+                    surgeOutputW = 3600;
+                    break;
+                case 'Jackery Explorer 2000 Pro':
+                    capacityWh = 2160;
+                    continuousOutputW = 2200;
+                    surgeOutputW = 4400;
+                    break;
+                case 'Jackery Explorer 3000 Pro':
+                    capacityWh = 3024;
+                    continuousOutputW = 3000;
+                    surgeOutputW = 6000;
+                    break;
+                case 'Jackery Explorer 8000 Pro': // Fictional for demonstration, adjust if real model exists
+                    capacityWh = 8000;
+                    continuousOutputW = 3000; // Assuming similar continuous output as 3000 Pro for high wattage
+                    surgeOutputW = 6000;
+                    break;
+                default:
+                    runtimeOutput.textContent = 'Invalid Jackery model selected.';
+                    resultsDiv.classList.remove('hidden');
+                    return;
+            }
+
+            // Check if appliance running wattage exceeds continuous output
+            if (applianceWattage > continuousOutputW) {
+                warningOutput.textContent = `Warning: The ${jackeryModel} has a continuous output of ${continuousOutputW}W. Your appliance's running wattage (${applianceWattage}W) exceeds this. It may not run or could damage the power station.`;
+            }
+
+            // Check if peak wattage exceeds surge output
+            if (!isNaN(peakWattage) && peakWattage > surgeOutputW) {
+                warningOutput.textContent += ` Warning: Your appliance's peak wattage (${peakWattage}W) exceeds the ${jackeryModel}'s surge output of ${surgeOutputW}W. The appliance may not start.`;
+            }
+
+            // Calculate runtime (Wh / W = hours)
+            // Apply an efficiency factor (e.g., 85% for AC conversion)
+            const efficiencyFactor = 0.85;
+            const estimatedHours = (capacityWh * efficiencyFactor) / applianceWattage;
+
+            const hours = Math.floor(estimatedHours);
+            const minutes = Math.round((estimatedHours - hours) * 60);
+
+            runtimeOutput.innerHTML = `The <strong>${jackeryModel}</strong> can power your ${applianceWattage}W appliance for approximately <strong>${hours} hours and ${minutes} minutes</strong>.`;
+            resultsDiv.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

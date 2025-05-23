@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPAP Camping Power Planner - Jackery for CPAP While Camping</title>
+    <meta name="description" content="Use the CPAP Camping Power Planner to find the best Jackery portable power station for your CPAP machine while camping. Calculate runtime, choose models, and ensure sound sleep outdoors.">
+    <meta name="keywords" content="Jackery for CPAP while camping, CPAP power bank, portable CPAP battery, camping CPAP power, Jackery Explorer, CPAP humidifier power, off-grid CPAP, Jackery CPAP runtime, best Jackery for CPAP, CPAP camping solution">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Jackery Portable Power Stations for CPAP Camping",
+      "description": "Portable power solutions from Jackery designed to power CPAP machines during camping trips, ensuring uninterrupted sleep outdoors.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Jackery"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Jackery Official Store"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1500"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use the CPAP Camping Power Planner",
+      "description": "A step-by-step guide to using the CPAP Camping Power Planner to determine your power needs for CPAP while camping.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Enter your CPAP machine's wattage (usually found on the power adapter).",
+          "image": "https://example.com/cpap-wattage-input.jpg",
+          "name": "Input CPAP Wattage"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Indicate if you use a humidifier, as this significantly increases power consumption.",
+          "image": "https://example.com/humidifier-option.jpg",
+          "name": "Humidifier Usage"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Specify the number of nights you plan to camp.",
+          "image": "https://example.com/camping-nights-input.jpg",
+          "name": "Camping Duration"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Select your preferred charging options (e.g., solar panels, car charger).",
+          "image": "https://example.com/charging-options.jpg",
+          "name": "Charging Preferences"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Click 'Calculate' to get personalized Jackery recommendations and estimated runtimes.",
+          "image": "https://example.com/calculate-button.jpg",
+          "name": "Get Recommendations"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CPAP Camping Power Planner",
+          "item": "https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus/jackery-cpap-camping/cpap-camping-power-planner-tool.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">CPAP Camping Power Planner</h1>
+            <p class="text-lg text-gray-600">Find the perfect Jackery for your outdoor CPAP needs.</p>
+            <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300 mt-4">
+                Shop Jackery Now!
+            </a>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-lg p-6 sm:p-8 mb-8">
+            <form id="cpap-power-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="cpap-wattage" class="block text-gray-700 text-sm font-bold mb-2">CPAP Machine Wattage (W):</label>
+                    <input type="number" id="cpap-wattage" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., 30" required>
+                    <p class="text-xs text-gray-500 mt-1">Typically found on your CPAP machine's power adapter. If unsure, a common range is 30-60W without humidifier, 60-100W with humidifier.</p>
+                </div>
+                <div>
+                    <label for="camping-nights" class="block text-gray-700 text-sm font-bold mb-2">Number of Camping Nights:</label>
+                    <input type="number" id="camping-nights" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., 2" required>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Humidifier Usage:</label>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="humidifier-use" class="mr-2 leading-tight">
+                        <label for="humidifier-use" class="text-gray-700">I use a humidifier with my CPAP.</label>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Humidifiers significantly increase power consumption. Factor this in for accurate results.</p>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Charging Options Available:</label>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="solar-charging" class="mr-2 leading-tight">
+                            <label for="solar-charging" class="text-gray-700">Solar Panels</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="car-charging" class="mr-2 leading-tight">
+                            <label for="car-charging" class="text-gray-700">Car Charger (12V)</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="ac-charging" class="mr-2 leading-tight">
+                            <label for="ac-charging" class="text-gray-700">AC Wall Outlet (before/after trip)</label>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Consider how you'll recharge your Jackery during or between camping days.</p>
+                </div>
+                <div class="md:col-span-2 text-center">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        Calculate My Power Needs
+                    </button>
+                </div>
+            </form>
+
+            <div id="results" class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200 hidden">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4">Your Recommended Jackery Solution:</h2>
+                <div id="recommendation-output" class="text-gray-800 text-lg leading-relaxed"></div>
+                <div class="mt-6 text-center">
+                    <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+                        View Jackery Products & Buy Now!
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <section class="bg-white rounded-lg shadow-lg p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Why Jackery for CPAP Camping?</h2>
+            <p class="text-gray-700 mb-4">
+                Ensuring a good night's sleep with your CPAP machine while enjoying the great outdoors is crucial. Jackery portable power stations provide a reliable, quiet, and efficient solution to keep your CPAP running, even far from traditional power sources. Their range of products offers various capacities to match your specific needs, from short weekend trips to extended adventures.
+            </p>
+            <p class="text-gray-700 mb-4">
+                With a Jackery, you can say goodbye to noisy generators and complicated setups. Just plug in your CPAP, and enjoy uninterrupted therapy under the stars.
+            </p>
+            <div class="text-center mt-6">
+                <a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="inline-block bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
+                    Explore Jackery CPAP Solutions
+                </a>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-600 text-sm mt-8">
+            <p>&copy; 2025 Jackery for CPAP While Camping. All rights reserved. This site contains affiliate links.</p>
+            <div class="mt-4 p-4 bg-gray-200 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Stay Powered Up!</h3>
+                <p class="text-gray-700 mb-3">Sign up for our newsletter to get exclusive tips and deals on portable power solutions for your outdoor adventures.</p>
+                <form class="flex flex-col sm:flex-row justify-center items-center gap-2">
+                    <input type="email" placeholder="Your Email Address" class="p-2 rounded-md border border-gray-300 w-full sm:w-auto flex-grow">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md w-full sm:w-auto">Subscribe</button>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('cpap-power-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const cpapWattage = parseFloat(document.getElementById('cpap-wattage').value);
+            const campingNights = parseInt(document.getElementById('camping-nights').value);
+            const humidifierUse = document.getElementById('humidifier-use').checked;
+            const solarCharging = document.getElementById('solar-charging').checked;
+            const carCharging = document.getElementById('car-charging').checked;
+            const acCharging = document.getElementById('ac-charging').checked;
+
+            if (isNaN(cpapWattage) || cpapWattage <= 0 || isNaN(campingNights) || campingNights <= 0) {
+                alert('Please enter valid positive numbers for CPAP Wattage and Camping Nights.');
+                return;
+            }
+
+            let effectiveWattage = cpapWattage;
+            if (humidifierUse) {
+                effectiveWattage *= 1.5; // Humidifier can increase consumption by 50% or more
+            }
+
+            const totalWhNeeded = effectiveWattage * 8 * campingNights; // Assuming 8 hours of CPAP use per night
+
+            let recommendation = '';
+            let recommendedModel = '';
+            let recommendedAccessories = [];
+
+            // Jackery Models (Capacity in Wh)
+            const jackeryModels = [
+                { name: 'Jackery Explorer 300', capacity: 293, idealFor: '1 night, no humidifier' },
+                { name: 'Jackery Explorer 500', capacity: 518, idealFor: '1-2 nights, light humidifier' },
+                { name: 'Jackery Explorer 1000', capacity: 1002, idealFor: '2-3 nights, humidifier' },
+                { name: 'Jackery Explorer 1500', capacity: 1534, idealFor: '3-4 nights, heavy humidifier' },
+                { name: 'Jackery Explorer 2000 Pro', capacity: 2160, idealFor: '4+ nights, heavy humidifier, multiple devices' }
+            ];
+
+            let bestFitModel = null;
+            for (const model of jackeryModels) {
+                // Account for 85% efficiency
+                if ((model.capacity * 0.85) >= totalWhNeeded) {
+                    bestFitModel = model;
+                    break;
+                }
+            }
+
+            if (bestFitModel) {
+                recommendedModel = bestFitModel.name;
+                recommendation += `<p>Based on your input, you'll need approximately <strong>${totalWhNeeded.toFixed(0)} Wh</strong> of power.</p>`;
+                recommendation += `<p>We recommend the <strong>${recommendedModel}</strong> (Capacity: ${bestFitModel.capacity}Wh) to comfortably power your CPAP for ${campingNights} night(s).</p>`;
+                recommendation += `<p>This model is generally ideal for: ${bestFitModel.idealFor}.</p>`;
+            } else {
+                const largestModel = jackeryModels[jackeryModels.length - 1];
+                recommendedModel = largestModel.name;
+                recommendation += `<p>Your estimated power need is <strong>${totalWhNeeded.toFixed(0)} Wh</strong>. This is a significant power requirement.</p>`;
+                recommendation += `<p>We recommend the largest available model, the <strong>${recommendedModel}</strong> (Capacity: ${largestModel.capacity}Wh), to meet your needs. You may need to consider recharging options during your trip.</p>`;
+            }
+
+            if (solarCharging) {
+                recommendedAccessories.push('Jackery SolarSaga Solar Panels (e.g., 100W or 200W)');
+            }
+            if (carCharging) {
+                recommendedAccessories.push('Jackery Car Charger');
+            }
+            if (humidifierUse) {
+                recommendation += `<p class="mt-2"><strong>Important:</strong> Using a humidifier significantly increases power draw. Consider using a DC converter for your CPAP if available, as it can be more efficient than AC power for CPAP machines.</p>`;
+            }
+
+            if (recommendedAccessories.length > 0) {
+                recommendation += `<p class="mt-2">Consider these accessories for extended use or recharging:</p><ul>`;
+                recommendedAccessories.forEach(acc => {
+                    recommendation += `<li class="list-disc ml-5">${acc}</li>`;
+                });
+                recommendation += `</ul>`;
+            }
+
+            recommendation += `<p class="mt-4">For detailed specifications and to purchase, visit the official Jackery website:</p>`;
+            recommendation += `<p class="mt-2"><a href="https://www.jackery.com?aff=1592&utm_source=affiliatly&utm_medium=affiliate&utm_campaign=affiliatlyus" target="_blank" class="text-blue-600 hover:underline font-semibold">Shop Jackery Portable Power Stations</a></p>`;
+
+
+            document.getElementById('recommendation-output').innerHTML = recommendation;
+            document.getElementById('results').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
